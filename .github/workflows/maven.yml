@@ -1,21 +1,17 @@
-git commit -m "Part 3 - Add dynamic ArrayLists 
-for sent, stored, disregarded messages, hashes, 
-and IDs"
-git commit -m "Part 3 - Implement 
-loadTestData() using provided test data"
-git commit -m "Part 3 - Add Stored Messages 
-menu with options a-f"
-git commit -m "Part 3 - Implement 
-displayLongestStoredMessage and 
-searchByMessageID"
-git commit -m "Part 3 - Implement 
-searchByRecipient and deleteByHash 
-functionality"
-git commit -m "Part 3 - Add displayFullReport for 
-complete message overview"
-git commit -m "Part 3 - Add Gson JSON save/
-load for stored messages array"
-git commit -m "Part 3 - Add JUnit 5 unit tests for 
-all menu requirements"
-git commit -m "Part 3 - Final testing and code 
-cleanup before submission
+name: Part 3 Java CI
+on:
+push:
+branches: [ main ]
+pull_request:
+branches: [ main ]
+jobs:
+build-and-test:
+runs-on: ubuntu-latest
+steps:- name: Checkout code
+uses: actions/checkout@v4- name: Set up JDK 17
+uses: actions/setup-java@v4
+with:
+java-version: '17'
+distribution: 'temurin'
+cache: 'maven'- name: Build and run tests
+run: mvn clean tes
