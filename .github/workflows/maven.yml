@@ -1,0 +1,21 @@
+git commit -m "Part 3 - Add dynamic ArrayLists 
+for sent, stored, disregarded messages, hashes, 
+and IDs"
+git commit -m "Part 3 - Implement 
+loadTestData() using provided test data"
+git commit -m "Part 3 - Add Stored Messages 
+menu with options a-f"
+git commit -m "Part 3 - Implement 
+displayLongestStoredMessage and 
+searchByMessageID"
+git commit -m "Part 3 - Implement 
+searchByRecipient and deleteByHash 
+functionality"
+git commit -m "Part 3 - Add displayFullReport for 
+complete message overview"
+git commit -m "Part 3 - Add Gson JSON save/
+load for stored messages array"
+git commit -m "Part 3 - Add JUnit 5 unit tests for 
+all menu requirements"
+git commit -m "Part 3 - Final testing and code 
+cleanup before submission
